@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="center"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="south"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1">
+    <tool name="NOT Gate">
+      <a name="facing" val="south"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="Detector de Número Primo: Crie um circuito que detecte se uma entrada binária de 4 bits representa um número primo. Utilize portas lógicas e mapas de Karnaugh para simplificar o circuito."/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="Detector de Número Primo: Crie um circuito que detecte se uma entrada binária de 4 bits representa um número primo. Utilize portas lógicas e mapas de Karnaugh para simplificar o circuito.">
+    <a name="circuit" val="Detector de Número Primo: Crie um circuito que detecte se uma entrada binária de 4 bits representa um número primo. Utilize portas lógicas e mapas de Karnaugh para simplificar o circuito."/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(170,260)" to="(170,390)"/>
+    <wire from="(440,250)" to="(500,250)"/>
+    <wire from="(440,340)" to="(500,340)"/>
+    <wire from="(370,160)" to="(370,230)"/>
+    <wire from="(170,390)" to="(170,650)"/>
+    <wire from="(140,60)" to="(140,70)"/>
+    <wire from="(240,60)" to="(240,70)"/>
+    <wire from="(220,50)" to="(220,60)"/>
+    <wire from="(220,320)" to="(220,650)"/>
+    <wire from="(170,390)" to="(290,390)"/>
+    <wire from="(70,50)" to="(70,60)"/>
+    <wire from="(90,60)" to="(90,70)"/>
+    <wire from="(120,50)" to="(120,60)"/>
+    <wire from="(90,100)" to="(90,240)"/>
+    <wire from="(70,60)" to="(70,650)"/>
+    <wire from="(220,180)" to="(220,320)"/>
+    <wire from="(170,50)" to="(170,260)"/>
+    <wire from="(370,350)" to="(370,370)"/>
+    <wire from="(500,250)" to="(500,270)"/>
+    <wire from="(120,350)" to="(290,350)"/>
+    <wire from="(90,240)" to="(390,240)"/>
+    <wire from="(220,320)" to="(390,320)"/>
+    <wire from="(140,140)" to="(300,140)"/>
+    <wire from="(120,60)" to="(120,350)"/>
+    <wire from="(240,100)" to="(240,650)"/>
+    <wire from="(90,240)" to="(90,660)"/>
+    <wire from="(170,260)" to="(390,260)"/>
+    <wire from="(350,160)" to="(370,160)"/>
+    <wire from="(370,230)" to="(390,230)"/>
+    <wire from="(350,370)" to="(370,370)"/>
+    <wire from="(370,350)" to="(390,350)"/>
+    <wire from="(140,100)" to="(140,140)"/>
+    <wire from="(70,60)" to="(90,60)"/>
+    <wire from="(120,60)" to="(140,60)"/>
+    <wire from="(120,350)" to="(120,650)"/>
+    <wire from="(220,60)" to="(240,60)"/>
+    <wire from="(500,280)" to="(510,280)"/>
+    <wire from="(500,270)" to="(510,270)"/>
+    <wire from="(220,180)" to="(300,180)"/>
+    <wire from="(500,280)" to="(500,340)"/>
+    <wire from="(220,60)" to="(220,180)"/>
+    <wire from="(140,140)" to="(140,650)"/>
+    <wire from="(560,280)" to="(570,280)"/>
+    <wire from="(570,280)" to="(580,280)"/>
+    <comp lib="0" loc="(570,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Saida "/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="1" loc="(440,340)" name="AND Gate"/>
+    <comp lib="1" loc="(350,160)" name="OR Gate">
+      <a name="label" val="OR"/>
+    </comp>
+    <comp lib="0" loc="(70,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(220,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="1" loc="(140,100)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(90,100)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(120,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(170,50)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="1" loc="(350,370)" name="XOR Gate">
+      <a name="label" val="XOR "/>
+    </comp>
+    <comp lib="1" loc="(240,100)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(440,250)" name="AND Gate">
+      <a name="label" val="AND"/>
+    </comp>
+    <comp lib="1" loc="(560,280)" name="OR Gate">
+      <a name="label" val="OR"/>
+    </comp>
+  </circuit>
+</project>
